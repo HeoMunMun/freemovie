@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search..." oninput="searchList()">
+        <button onclick="searchList()">Search</button>
+      </div>
+    </div>
+    <ul id="imageList">
+        <li>
+            <div class="image-container">
+              <img src="#" class="image">
+              <p class="image-description">#<br /><a href="#" target="_blank" download><button class="download-button">Download</button></a></p>
+            </div>
+        </li>
+      
+      <!-- Add more list items as needed -->
+    </ul>
+    <p id="noResultMessage" style="display: none;">No results found.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
